@@ -43,7 +43,8 @@ const accountData = new mongoose.Schema({
   phone: {
     type: String,
     required: true,
-    minlength: 6,
+    minlength: 10,
+    maxlength: 10,
     unique: true,
     trim: true,
   },
